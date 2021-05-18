@@ -1,0 +1,711 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #f7f5f0;
+}
+
+.bio,
+.pf-cards,
+.skills,
+.contact {
+    line-height: 1.4rem;
+}
+
+.bio{
+    text-align: center;
+}
+
+:target {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
+/* Base Styles */
+
+/* Container Styles */
+
+.hd-container,
+.container,
+.ft-container {
+    padding: 0px 1rem;
+    margin: 0px auto;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+}
+
+.hd-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+.icon {
+    font-size: 1.35rem;
+}
+
+.mobile-nav {
+    background-color: #333333;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#myLinks {
+    display: none;
+}
+
+ul#myLinks  {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#myLinks li {
+    list-style: none;
+    margin: 20px;
+}
+
+.main-nav {
+    display: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.main-heading {
+    margin-right: auto;
+    text-align: center;
+}
+
+.main-heading h1,
+.main-heading h3 {
+    margin: 0px
+}
+
+.main-heading h1 {
+    font-size: 1rem;
+}
+
+.main-heading h3 {
+    font-size: .65rem;
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Banner Styles */
+
+.banner {
+    text-align: center;
+    background: url('../img/color-dumbo.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 115px;
+    padding-bottom: 50px;
+}
+
+.banner h1,
+.banner h3,
+.banner p {
+    color: #FFFFFF;
+    background-color: #000000;
+    display: table;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 1.50rem;
+}
+
+.banner h3 {
+    font-size: 1rem;
+}
+
+.banner p {
+    font-size: .75rem;
+}
+
+.profile-image {
+    margin-top: 50px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Bio Styles */
+
+.bio-heading {
+    text-align: center;
+    margin: 0px;
+}
+
+.bio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 50px;
+}
+
+.bio p {
+    margin: 0px;
+}
+
+.bio a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Portfolio Styles */
+
+.pf-heading {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.pf-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
+}
+
+.project-images,
+.project-info {
+    width: 100%;
+}
+
+.project-images {
+    border: 1px solid #808080;
+    cursor: pointer;
+}
+
+.project-info {
+    margin-top: .75rem;
+}
+
+.button {
+    display: inline-block;
+    margin: 0px 2.5px;
+    padding: 10px;
+    background-color: lightgray;
+    color: #4C4C4C;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-git {
+    margin-left: 0px;
+}
+
+/* Skills Styles */
+
+.skills {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
+}
+
+.sk-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sk-images img {
+    margin: 0px 2.5px;
+}
+
+.html-logo,
+.css-logo,
+.js-logo {
+    width: 25px;
+}
+
+.bootstrap-logo {
+    width: 30px;
+}
+
+.sass-logo {
+    width: 40px;
+}
+
+.jquery-logo {
+    width: 85px;
+}
+
+.skills-list-div {
+    margin-top: 30px;
+}
+
+.sk-heading {
+    text-align: center;
+    margin: 0px;
+}
+
+.sk-list {
+    margin: 0px;
+    list-style: none;
+}
+
+.sk-table {
+    display: none;
+}
+
+.sk-table-1024 {
+    display: none;
+}
+
+
+/* Contact Styles */
+
+.contact {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.ct-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ct-images img {
+    margin: 0px 2.5px;
+}
+
+.github-logo,
+.linkedin-logo,
+.twitter-logo,
+.treehouse-logo {
+    width: 30px;
+}
+
+/* Image Overlay Styles */
+
+#modal-overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon {
+    align-self: flex-end;
+    margin: 0px 25px 25px 25px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.overlay-project-image {
+    width: 80%;
+    border: 7px solid #000000;
+}
+
+/* Project Details Modal Styles */
+
+/* Modal Header */
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-header h2 {
+    margin-right: auto;
+}
+
+.close {
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+/* Modal Body */
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body ul {
+    margin-left: 16px;
+}
+
+.modal-body a {
+    color: #000000;
+}
+  
+/* Modal Footer */
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    height: 32.906px;
+}
+  
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 7px solid #000000;
+    height: 50%;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow: auto;
+    font-size: .5em;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ft-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+/* Media Queries */
+
+    @media only screen and (min-width: 768px) {
+       
+        /* Global Styles */
+
+        .bio,
+        .pf-cards,
+        .skills,
+        .contact {
+            line-height: 1.65rem;
+        }
+
+        /* Base Styles */
+
+        /* Container Styles */
+
+        .hd-container,
+        .container,
+        .ft-container {
+            max-width: 800px;
+        }
+        
+        /* Header Styles */
+
+        .main-heading h1 {
+            font-size: 1.25rem;
+        }
+        
+        .main-heading h3 {
+            font-size: .75rem;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .icon {
+            display: none;
+        }
+
+        .main-nav {
+            display: flex;
+        }
+
+        .main-nav ul li {
+            float: left;
+            margin: 0 3px;
+            list-style: none;
+        }
+
+        .main-nav ul li {
+            margin: 0 5px;   
+        }
+
+        .main-nav ul li {
+            font-size: 1rem;
+        }
+
+        .contact-li {
+            margin-right: 0px;
+        }
+
+        /* Banner Styles */
+
+        .banner {
+            padding-top: 145px;
+        }
+
+        .banner h1 {
+            font-size: 1.75rem;
+        }
+        
+        .banner h3 {
+            font-size: 1.085rem;
+        }
+        
+        .banner p {
+            font-size: .85rem;
+        }
+
+        .profile-image {
+            width: 135px;
+            height: 135px;
+        }
+
+        /* Skills Styles */
+
+        .sk-list {
+            display: none;
+        } 
+
+        .sk-table {
+            display: inline-block;
+        }
+
+        .sk-table ul {
+            list-style: disc;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .sk-table td {
+            vertical-align: baseline !important;
+            padding: 0 25px;
+            
+        }
+
+        /* Image Overlay Styles */
+
+        .close-icon {
+            margin: 0px 40px 40px 40px;
+            font-size: 30px;
+        }
+
+        /* Project Details Modal Styles */
+
+        .modal-content {
+            font-size: 1em;    
+        }
+
+        /* Modal Footer */
+
+        .modal-footer {
+            height: 69.813px;
+        }
+        
+        /* Footer Styles */
+
+        footer p {
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        /* Base Styles */
+
+        /* Container Styles */
+
+        .hd-container,
+        .container,
+        .ft-container {
+            max-width: 1200px;
+            padding: 0px 2rem;  
+        }
+
+        .container {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        /* Banner Styles */
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .banner h1 {
+            font-size: 2rem;
+        }
+        
+        .banner h3 {
+            font-size: 1.17rem;
+        }
+        
+        .banner p {
+            font-size: 1rem;
+        }
+
+        /* Bio Styles */
+
+        .bio {
+            padding-top: 65px;
+            padding-bottom: 65px;
+            margin-bottom: 65px;
+        }
+
+        /* Portfolio Styles */
+
+        .card {
+            flex-direction: row;
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        .project-heading {
+            margin-top: 0px;
+        }
+
+        .project-images,
+        .project-info {
+            max-width: 50%;
+        }
+
+        .project-images {
+            margin-right: 1rem;
+        }
+        
+        .project-info {
+            margin-top: 0px;
+            margin-left: 1rem;   
+        }
+
+        /* Skills Styles */
+
+        .skills {
+            padding-top: 0px;
+            padding-bottom: 65px;
+        }
+
+        .sk-table {
+            display: none;
+        }
+
+        .sk-table-1024 {
+            display: inline-block;
+        }
+
+        .sk-table-1024 ul {
+            list-style: disc;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .sk-table-1024 td {
+            vertical-align: baseline !important;
+            padding: 0 25px;
+            
+        }
+
+        /* Contact Styles */
+
+        .contact {
+            padding-top: 65px;
+        }
+
+        /* Image Overlay Styles */
+
+        .close-icon {
+            font-size: 50px;
+            margin: 0px 50px 50px 50px;
+        }
+
+        .overlay-project-image {
+            border-width: 10px;
+        }
+
+        /* Project Details Modal Styles */
+
+        .modal-content {
+            border-width: 10px;
+        }
+
+    }
