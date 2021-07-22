@@ -51,29 +51,6 @@ window.addEventListener('click', e => {
 
 /* These event listners listen for clicks on the project images and close icon and then execute the css flip in and flip out animations. */
 
-pfCard.addEventListener('click', e => {
-    projectImage.forEach((image, index) => {
-        if (e.target === image) {
-            modalOverlay.style.display = 'flex';
-            modalOverlay.classList.add('animate__flipInY');   
-        }
-    });
-
-    modalOverlay.addEventListener('animationend', () => {
-        if (modalOverlay.classList.contains('animate__flipInY')) {
-            modalOverlay.classList.remove('animate__flipInY');
-        } else if (modalOverlay.classList.contains('animate__flipOutY')) {
-            modalOverlay.classList.remove('animate__flipOutY');
-            modalOverlay.style.display = 'none';
-        }
-    });
-
-    const closeIcon = document.querySelector('.close-icon');
-    closeIcon.addEventListener('click', () => {
-        modalOverlay.classList.add('animate__flipOutY');
-    });
-});
-
 /* Overlay & Project Details Modal Event Listeners */
 
 /* These event listners reset the css animations. */
