@@ -54,28 +54,3 @@ window.addEventListener('click', e => {
 /* Overlay & Project Details Modal Event Listeners */
 
 /* These event listners reset the css animations. */
-
-pfCard.addEventListener('click', e => {
-    projectDetailsBtn.forEach((button, index) => {
-        if (e.target === button) {
-            modalOverlay.style.display = 'flex';
-            modalOverlay.innerHTML = `${projectInfo[index].projectDetails}`;
-
-            modalOverlay.classList.add('animate__fadeIn');
-        }
-    });
-
-    modalOverlay.addEventListener('animationend', () => {
-        if (modalOverlay.classList.contains('animate__fadeIn')) {
-            modalOverlay.classList.remove('animate__fadeIn');
-        } else if (modalOverlay.classList.contains('animate__fadeOut')) {
-            modalOverlay.classList.remove('animate__fadeOut');
-            modalOverlay.style.display = 'none';
-        }
-    });
-
-    const closeIconDetails = document.querySelector('.close');
-    closeIconDetails.addEventListener('click', () => {
-        modalOverlay.classList.add('animate__fadeOut');
-    });
-});
