@@ -55,10 +55,6 @@ pfCard.addEventListener('click', e => {
     projectImage.forEach((image, index) => {
         if (e.target === image) {
             modalOverlay.style.display = 'flex';
-            modalOverlay.innerHTML = `
-                <span class="close-icon">X</span>
-                <img class="overlay-project-image" src="img/screen-shots/${projectInfo[index].projectName}.png" alt="Modal Project Image">
-            `;
             modalOverlay.classList.add('animate__flipInY');   
         }
     });
